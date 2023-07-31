@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav>
+    <div class="flex px-20 text-lg font-normal py-4 z-40 w-full items-center">
+      <img
+        src="Terrain.png"
+        alt="Terrain"
+        class="h-16 cursor-pointer"
+        style="filter: invert(100%)"
+        id="logo"
+      />
+      <ul class="inline-flex ml-auto">
+        <li
+          class="text-Black px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg invert"
+        >
+          <a href="index.html" target="_blank">HOME</a>
+        </li>
+        <li
+          class="text-black px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg invert"
+        >
+          <a href="Landscape.html" target="_blank">LANDSCAPES</a>
+        </li>
+        <li
+          class="text-black px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg invert"
+        >
+          <a href="ABOUT_US.html" target="_blank">ABOUT US</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div>
+      <div class="bg-black/40 -z-10 absolute inset-0 w-full h-screen"></div>
+      <video
+        src="Sea.mp4"
+        autoplay
+        loop
+        muted
+        class="absolute inset-0 w-full -z-20 h-screen object-cover blur-sm"
+      >
+        This video Doesn't work in your browser
+      </video>
+    </div>
+    <div class="flex mt-36">
+      <div 
+      id="card"
+        class="max-w-sm rounded-2xl overflow-hidden shadow-lg ml-20 flex-auto"
+      ><a href="Swiss_Alps.html" target="_blank">
+        <img
+          src="1.png"
+          alt="swiss-alps"
+          class="w-full hover:scale-105 transition-all 3 cursor-pointer"
+        /></a>
+        <div
+        class="px-5 py-2 text-white h-72 backdrop-filter-blur bg-transparent backdrop-blur-3xl"
+        >
+          <h1 class="font-bold py-1 font-Bold text-2xl">Swiss Alps</h1>
+          <p class="text-justify">
+            Indulge in a realm where towering peaks adorned with snow seem to
+            kiss the heavens, while serene valleys cradle crystal-clear lakes
+            like precious gems. The Swiss Alps, a captivating expanse of
+            breathtaking natural beauty, harmonize into a symphony of
+            awe-inspiring landscapes that bewitch the souls of those who venture
+            into its enchanting embrace.
+          </p>
+        </div>
+      </div>
+      <div
+      id="card"
+        class="max-w-sm rounded-2xl overflow-hidden shadow-lg ml-20 flex-auto"
+      ><a href="Amazon.html" target="_blank">
+        <img
+          src="2.png"
+          alt="Amazon"
+          class="w-full hover:scale-105 transition-all 3 cursor-pointer"
+        /></a>
+        <div
+        id="card"
+          class="px-5 py-2 text-white h-72 backdrop-filter-blur bg-transparent backdrop-blur-3xl"
+        >
+          <h1 class="text-White font-bold py-1 font-Bold text-2xl">
+            Amazon Rainforest
+          </h1>
+          <p class="text-justify">
+            Embark on an expedition to the beating heart of a living entity –
+            the Amazon Rainforest, a mystical realm that dances to the rhythm of
+            life. Stretching across vast territories with unmatched
+            biodiversity, this emerald wilderness is a sanctuary of unbridled
+            beauty and astonishing marvels. Delve into the lush embrace of the
+            Amazon, where each footfall unveils a story of nature's unparalleled
+            artistry.
+          </p>
+        </div>
+      </div>
+      <div
+      id="card"
+        class="bg-white-900 max-w-sm rounded-2xl overflow-hidden shadow-lg ml-20 flex-auto"
+      ><a href="Himalaya.html" target="_blank">
+        <img
+          src="3.png"
+          alt="Mt. Everest"
+          class="w-full hover:scale-105 transition-all 3 cursor-pointer"
+        /></a>
+        <div id="card" class="px-5 py-2 text-white h-72 backdrop-filter-blur bg-transparent backdrop-blur-3xl">
+          <h1 class="text-white font-bold py-1 font-Bold text-2xl">
+            Mt. Everest
+          </h1>
+          <p class="text-justify">
+            Mount Everest, the pinnacle of the world, stands tall as an
+            awe-inspiring emblem of human resilience and the unwavering quest
+            for adventure. Cloaked in perpetual snow, this colossal behemoth
+            calls out to daring souls worldwide, urging them to push their
+            boundaries and conquer its breathtaking summit. Prepare for an
+            extraordinary journey to Mount Everest.
+          </p>
+        </div>
+      </div>
+      <div
+      id="card"
+        class="bg-white-900 max-w-sm rounded-2xl overflow-hidden shadow-lg ml-20 flex-auto"
+      >
+        <a href="Pacific.html" target="_blank"><img
+          src="4.png"
+          alt="Pacific Ocean"
+          class="w-full hover:scale-105 transition-all 3 cursor-pointer"
+        /></a>
+        <div id="card" class="px-5 py-2 text-white h-72 backdrop-filter-blur bg-transparent backdrop-blur-3xl">
+          <h1 class="text-white font-bold py-1 font-Bold text-2xl">
+            Pacific Ocean
+          </h1>
+          <p class="text-justify">
+            The Pacific Ocean, Earth's vast and enigmatic water body, conceals a
+            realm of marvels beneath its boundless horizon. Encompassing almost
+            one-third of the planet's surface, this oceanic expanse forms a
+            mesmerizing mosaic of diverse marine life, captivating landscapes,
+            and a tapestry of diverse cultures. Embark on an unforgettable
+            voyage through the Pacific.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.from("#logo", { y: -100, duration: 0.5, delay: 0.2, opacity: 0 });
+      gsap.from("li", {
+        y: -100,
+        duration: 0.5,
+        delay: 0.2,
+        opacity: 0,
+        stagger: 0.08,
+      });
+      gsap.from("#card", { Y: -100, duration: 0.5, opacity: 0, delay: 0.6 });
+
+      // gsap.from("p", {
+      //   x: -50,
+      //   duration: 0.5,
+      //   delay: 0.2,
+      //   opacity: 0,
+      //   delay: 0.5,
+      // });
+    </script>
+  </body>
+</html>

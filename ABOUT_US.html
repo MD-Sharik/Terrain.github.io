@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    </style>
+  </head>
+
+  <body>
+    <div class="flex px-20 text-lg font-normal py-4 z-40 w-full items-center">
+      <img
+        src="Terrain.png"
+        alt="Terrain"
+        class="h-16 cursor-pointer"
+        style="filter: invert(100%)"
+        id="img1"
+      />
+      <ul class="inline-flex ml-auto">
+        <li
+          class="text-slate-600 px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg">
+          <a href="index.html" target="_blank">HOME</a>
+        </li>
+        <li
+          class="text-slate-600 px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg">
+          <a href="Landscape.html" target="_blank">LANDSCAPES</a>
+        </li>
+        <li
+          class="text-slate-600 px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg">
+          <a href="ABOUT_US.html" target="_blank">ABOUT US</a>
+        </li>
+      </ul>
+    </div>
+    <div class="bg-black/40 -z-10 fixed inset-0 w-full h-screen"></div>
+    <img src="About us.jpeg" alt="aboutus" class="fixed inset-0 w-full -z-20 h-screen object-cover blur-sm">
+    <div class="text-white px-20">
+      <h1 class="font-bold text-8xl mt-52 font-mono">Terrain</h1>
+      <p id="p1" class="text-xl max-w-[80ch] text-justify mt-5">
+        In 2023, a passionate and environmentally conscious college student
+        named "MD Sharik" initiated an inspiring project called "Terrain" with the
+        mission to protect the beauty of the Earth and raise awareness about its
+        astonishing diversity. Recognizing the urgent need to address
+        environmental issues and foster a sense of stewardship for our planet,
+        Sharik envisioned a project that would captivate people's hearts and
+        minds, igniting a global movement towards preserving the natural wonders
+        of Earth.
+      </p>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.from("#img1", { y: -100, duration: 0.5, delay: 0.2, opacity: 0 });
+      gsap.from("li", {
+        y: -100,
+        duration: 0.5,
+        delay: 0.2,
+        opacity: 0,
+        stagger: 0.08,
+      });
+      gsap.from("h1", { x: -50, duration: 0.5, opacity: 0, delay: 0.6 });
+
+      gsap.from("#p1", {
+        x: -50,
+        duration: 0.5,
+        delay: 0.2,
+        opacity: 0,
+        delay: 0.5,
+      });
+    </script>
+  </body>
+</html>

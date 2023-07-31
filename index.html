@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="flex px-20 text-lg font-normal py-4 z-40 w-full items-center">
+      <img
+        src="Terrain.png"
+        alt="Terrain"
+        class="h-16 cursor-pointer"
+        style="filter: invert(100%)"
+        id="img1"
+      />
+      <ul class="inline-flex ml-auto">
+        <li
+          class="text-Black px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg invert"
+        >
+          <a href="index.html" target="_blank">HOME</a>
+        </li>
+        <li
+          class="text-black px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg invert"
+        >
+          <a href="Landscape.html" target="_blank">LANDSCAPES</a>
+        </li>
+        <li
+          class="text-black px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg invert"
+        >
+          <a href="ABOUT_US.html" target="_blank">ABOUT US</a>
+        </li>
+      </ul>
+    </div>
+    <div class="bg-black/40 -z-10 fixed inset-0 w-full h-screen"></div>
+    <video
+      src="desert.mp4"
+      autoplay
+      loop
+      muted
+      class="fixed inset-0 w-full -z-20 h-screen object-cover"
+    >
+      This video Doesn't work in your browser
+    </video>
+    <div class="text-white px-20">
+      <h1 class="font-bold text-8xl mt-52 font-mono" id="h1">SAHARA DESERT</h1>
+      <p id="p1" class="text-xl max-w-[80ch] text-justify mt-5">
+        Step into a realm of unparalleled majesty and wonder – the Sahara
+        Desert, a breathtaking expanse that defies the boundaries of
+        imagination. Stretching as far as the eye can see, this arid landscape
+        is a tapestry of ever-shifting dunes, sculpted by the whimsical winds
+        that dance across the sands. With its enchanting silence and formidable
+        vastness, the Sahara is a testament to nature's boundless power and
+        timeless beauty.
+      </p>
+    </div>
+
+    <div class="text-white px-20 py-28 float-right">
+      <h2 class="font-bold text-5xl mt-52 font-mono text-end w-full" id="h2">
+        A Symphony of Colors
+      </h2>
+      <p id="p2" class="text-xl max-w-[80ch] mt-5 text-justify">
+        As dawn breaks over the horizon, a remarkable spectacle unfolds. The
+        desert comes alive with a dazzling display of colors, as the first rays
+        of sunlight cast a golden hue upon the dunes. Throughout the day, the
+        desert's palette transforms, ranging from warm ochre tones to fiery reds
+        and deep purples during the magical sunsets. Each moment in the Sahara
+        is a canvas of unparalleled artistry that leaves visitors in awe of its
+        natural grandeur.
+      </p>
+    </div>
+    <div class="text-white px-20 py-96 float left">
+      <h2 class="font-bold text-5xl mt-96 font-mono" id="h1">An Oasis of Life</h2>
+      <p id="p1" class="text-xl max-w-[80ch] text-justify mt-5">
+        Contrary to its reputation as an inhospitable wasteland, the Sahara is
+        teeming with life, adapted to its harsh conditions. Hidden in its midst
+        are oasis paradises, where lush palm groves and freshwater springs
+        provide a refuge for diverse wildlife. Camels gracefully traverse the
+        dunes, while elusive fennec foxes and other desert creatures leave their
+        faint footprints in the sand. The Sahara is a testament to life's
+        resilience, proving that beauty can thrive even in the most unlikely of
+        places.
+      </p>
+    </div>
+    <div>
+      <a href="https://en.wikipedia.org/wiki/Sahara" target="_blank"
+        ><button id="img2"
+          class="border-white p-3 rounded-lg block mx-auto py-10 text-white text-2xl"
+        >
+          LEARN MORE<img
+            src="Link.png"
+            alt="Link"
+            class="mx-auto inline-block px-2 -mt-2 scale-75 hover:-rotate-45"
+            style="filter: invert(100%)"
+            id="img2"
+          />
+        </button>
+      </a>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.from(
+        "#img1",{y:-100, duration: 0.5, delay: 0.2 , opacity:0})
+        gsap.from(
+        "#img2",{y:100, duration: 0.5, delay: 0.2 , opacity:0})
+        gsap.from(
+        "li",{y:-100, duration: 0.5, delay: 0.2 , opacity:0, stagger: 0.08})
+      gsap.from(
+        "#h1",{x:-50, duration: 0.5, opacity:0, delay: 0.6})
+
+        gsap.from(
+        "#h2",{x:50, duration: 0.5, opacity:0, delay: 0.6})
+      
+        gsap.from(
+        "#p1",{x:-50, duration: 0.5,  opacity:0, delay: 0.7})
+        gsap.from(
+        "#p2",{x:50, duration: 0.5 , opacity:0, delay: 0.7})
+    </script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex px-20 text-lg font-normal py-4 z-40 w-full items-center">
+      <img
+        src="Terrain.png"
+        alt="Terrain"
+        class="h-16 cursor-pointer"
+        style="filter: invert(100%)"
+        id="img1"
+      />
+      <ul class="inline-flex ml-auto">
+        <li
+          class="text-Black px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg invert"
+        >
+          <a href="index.html" target="_blank">HOME</a>
+        </li>
+        <li
+          class="text-black px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg invert"
+        >
+          <a href="Landscape.html" target="_blank">LANDSCAPES</a>
+        </li>
+        <li
+          class="text-black px-8 cursor-pointer font-medium transition-colors ease-in-out duration-300 hover:text-white drop-shadow-lg invert"
+        >
+          <a href="ABOUT_US.html" target="_blank">ABOUT US</a>
+        </li>
+      </ul>
+    </div>
+    <div class="bg-black/40 -z-10 fixed inset-0 w-full h-screen"></div>
+    <video
+      src="Ocean.mp4"
+      autoplay
+      loop
+      muted
+      class="fixed inset-0 w-full -z-20 h-screen object-cover"
+    >
+      This video Doesn't work in your browser
+    </video>
+    <div class="text-white px-20">
+      <h1 class="font-bold text-8xl mt-52 font-mono" id="h1">PACIFIC OCEAN</h1>
+      <p class="text-xl max-w-[80ch] text-justify mt-5" id="p1">
+        The Pacific Ocean, the largest and most enigmatic body of water on
+        Earth, holds a world of wonders within its endless horizon. Spanning
+        nearly one-third of the planet's surface, this oceanic expanse is a
+        breathtaking tapestry of diverse marine life, stunning landscapes, and a
+        rich tapestry of cultures. Embark on an unforgettable odyssey through
+        the Pacific, where each wave reveals a new story and every dive uncovers
+        a treasure trove of hidden gems.
+      </p>
+    </div>
+    <div class="text-white px-20 py-28 float-right">
+      <h2 class="font-bold text-5xl mt-52 font-mono text-end w-full" id="h2">
+        The Blue Frontier
+      </h2>
+      <p id="p2" class="text-xl max-w-[80ch] mt-5 text-justify">
+        Stretching from the western shores of the Americas to the eastern
+        boundaries of Asia and Australia, the Pacific Ocean is the world's
+        largest oceanic realm. Its vastness is awe-inspiring, serving as a
+        canvas for the most breathtaking sunsets and mesmerizing moonlit nights.
+        The rhythmic dance of waves upon its shores lulls travelers into a
+        tranquil reverie, inviting them to embrace the beauty of the boundless
+        blue.
+      </p>
+    </div>
+    <div class="text-white px-20 py-96 float left">
+      <h2 class="font-bold text-5xl mt-96 font-mono" id="h1">Marine Wonderland
+      </h2>
+      <p id="p1" class="text-xl max-w-[80ch] text-justify mt-5">
+        Diving beneath the surface of the Pacific, you enter an otherworldly
+        realm of marine diversity. Coral reefs teem with vibrant fish, dazzling
+        in their kaleidoscopic colors, while graceful sea turtles glide
+        effortlessly through the water. Majestic whales migrate across these
+        waters, and playful dolphins leap in joyous abandon. The Pacific Ocean
+        is a testament to the importance of marine conservation, for within its
+        depths lie some of the planet's most vital ecosystems.
+      </p>
+    </div>
+    <div>
+      <a href="https://en.wikipedia.org/wiki/Pacific_Ocean" target="_blank"
+        ><button id="img2"
+          class="border-white p-3 rounded-lg block mx-auto py-10 text-white text-2xl"
+        >
+          LEARN MORE<img
+            src="Link.png"
+            alt="Link"
+            class="mx-auto inline-block px-2 -mt-2 scale-75 hover:-rotate-45"
+            style="filter: invert(100%)" id="img2"
+          />
+        </button>
+      </a>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.from(
+        "#img1",{y:-100, duration: 0.5, delay: 0.2 , opacity:0})
+        gsap.from(
+        "#img2",{y:100, duration: 0.5, delay: 0.2 , opacity:0})
+        gsap.from(
+        "li",{y:-100, duration: 0.5, delay: 0.2 , opacity:0, stagger: 0.08})
+      gsap.from(
+        "#h1",{x:-50, duration: 0.5, opacity:0, delay: 0.6})
+
+        gsap.from(
+        "#h2",{x:50, duration: 0.5, opacity:0, delay: 0.6})
+      
+        gsap.from(
+        "#p1",{x:-50, duration: 0.5,  opacity:0, delay: 0.7})
+        gsap.from(
+        "#p2",{x:50, duration: 0.5 , opacity:0, delay: 0.7})
+    </script>
+  </body>
+</html>
